@@ -18,9 +18,22 @@
   }
 
   body {
-    @apply antialiased;
+    @apply antialiased bg-bg text-white;
   }
 }
+
+/* panel/card */
+.card {
+  @apply bg-panel shadow-md rounded-2xl p-6 border border-gray-800;
+}
+
+/* accent button */
+.btn-accent {
+  @apply inline-flex items-center px-4 py-2 rounded-md bg-accent text-black font-medium;
+}
+
+/* subtle text */
+.muted { @apply text-muted; }
 
 /* Custom utility classes for shadcn/ui patterns */
 @layer utilities {

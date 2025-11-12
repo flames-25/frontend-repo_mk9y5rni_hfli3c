@@ -3,6 +3,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -13,6 +14,18 @@ export default {
         mona: ['Mona Sans', 'system-ui', 'sans-serif'],
         'ibm-plex': ['IBM Plex Sans', 'system-ui', 'sans-serif'],
         manrope: ['Manrope', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        bg: {
+          DEFAULT: '#0b0b0c',
+          soft: '#0f1113'
+        },
+        panel: '#0d0e10',
+        accent: '#00c2ff',
+        muted: '#9aa0a6',
+      },
+      backgroundImage: {
+        'hero-gradient': 'linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00))'
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
